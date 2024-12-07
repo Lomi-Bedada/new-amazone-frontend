@@ -1,0 +1,54 @@
+.category {
+  height: 350px;
+  width: 300px;
+
+  background: #fff;
+}
+
+.category img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 250px;
+  padding: 0 5px;
+}
+
+.category a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+.category h2,
+.category p {
+  padding: 5px;
+  margin-left: 15px;
+  text-align: center;
+}
+
+.category p {
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(9, 132, 209);
+}
+
+/* Category Container Styles */
+.category_container {
+  
+    position: relative;
+    margin-top: -10%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+   
+}
+@media (max-width: 600px) {
+  .category_container {
+    max-width: 100%; /* Full width on small screens */
+  }
+}
+@media (min-width: 501px) and (max-width: 1200px) {
+  .category_container {
+    max-width: 100%;
+    height: auto;
+    /* Smaller max width for medium screens */
+  }
+}
